@@ -2,90 +2,90 @@
 
 ## `param_model` 插件算法
 ### Outline
-- [Add](#Add)
-- [AppLaunch](#AppLaunch)
-- [Arc](#Arc)
-- [Array](#Array)
-- [BoundingBox](#BoundingBox)
-- [Box](#Box)
-- [Brep](#Brep)
-- [BSPLine](#BSPLine)
-- [BSPLineSurf](#BSPLineSurf)
-- [Chamfer](#Chamfer)
-- [CircleCenter](#CircleCenter)
-- [Circle](#Circle)
-- [CirclePolygon](#CirclePolygon)
-- [Common](#Common)
-- [Compound](#Compound)
-- [Cone](#Cone)
-- [Copy](#Copy)
-- [Cut](#Cut)
-- [Cylinder](#Cylinder)
-- [Decompose](#Decompose)
-- [DomainObjFile](#DomainObjFile)
-- [Dxf2d](#Dxf2d)
-- [Edge](#Edge)
-- [EdgeArray](#EdgeArray)
-- [Ellipse](#Ellipse)
-- [Ellipsoid](#Ellipsoid)
-- [Evolved](#Evolved)
-- [Face](#Face)
-- [Fillet2D](#Fillet2D)
-- [Fillet](#Fillet)
-- [Fuse](#Fuse)
-- [GlobalParamBatch](#GlobalParamBatch)
-- [Group](#Group)
-- [Helix](#Helix)
-- [Hyperbola](#Hyperbola)
-- [IFC](#IFC)
-- [Iges](#Iges)
-- [IncrementalMesh](#IncrementalMesh)
-- [Mirror](#Mirror)
-- [Offset](#Offset)
-- [OBoundingBox](#OBoundingBox)
-- [Parabola](#Parabola)
-- [Pipe](#Pipe)
-- [PipeShell](#PipeShell)
-- [Prism](#Prism)
-- [ProjectCurve](#ProjectCurve)
-- [ProjectSurf](#ProjectSurf)
-- [PyScript](#PyScript)
-- [Remove](#Remove)
-- [ResultFilter](#ResultFilter)
-- [Revol](#Revol)
-- [RingArray](#RingArray)
-- [Rotate](#Rotate)
-- [Scale](#Scale)
-- [Script](#Script)
-- [Section](#Section)
-- [Shell](#Shell)
-- [Solid](#Solid)
-- [Sphere](#Sphere)
-- [SpherialCrown](#SpherialCrown)
-- [Split](#Split)
-- [SplitByPlane](#SplitByPlane)
-- [SplitEdge](#SplitEdge)
-- [Step](#Step)
-- [Stl](#Stl)
-- [STLWriter](#STLWriter)
-- [SVGWriter](#SVGWriter)
-- [Tetrahedron](#Tetrahedron)
-- [ThickSolid](#ThickSolid)
-- [Thrusections](#Thrusections)
-- [ThrusectionsPath](#ThrusectionsPath)
-- [Torus](#Torus)
-- [Transform](#Transform)
-- [TransformRT](#TransformRT)
-- [TransformRTAS](#TransformRTAS)
-- [Translation](#Translation)
-- [Vector](#Vector)
-- [Vertex](#Vertex)
-- [Wedge](#Wedge)
-- [Wire](#Wire)
+- [Add](#add)
+- [AppLaunch](#applaunch)
+- [Arc](#arc)
+- [Array](#array)
+- [BoundingBox](#boundingbox)
+- [Box](#box)
+- [Brep](#brep)
+- [BSPLine](#bspline)
+- [BSPLineSurf](#bsplinesurf)
+- [Chamfer](#chamfer)
+- [CircleCenter](#circlecenter)
+- [Circle](#circle)
+- [CirclePolygon](#circlepolygon)
+- [Common](#common)
+- [Compound](#compound)
+- [Cone](#cone)
+- [Copy](#copy)
+- [Cut](#cut)
+- [Cylinder](#cylinder)
+- [Decompose](#decompose)
+- [DomainObjFile](#domainobjfile)
+- [Dxf2d](#dxf2d)
+- [Edge](#edge)
+- [EdgeArray](#edgearray)
+- [Ellipse](#ellipse)
+- [Ellipsoid](#ellipsoid)
+- [Evolved](#evolved)
+- [Face](#face)
+- [Fillet2D](#fillet2d)
+- [Fillet](#fillet)
+- [Fuse](#fuse)
+- [GlobalParamBatch](#globalparambatch)
+- [Group](#group)
+- [Helix](#helix)
+- [Hyperbola](#hyperbola)
+- [IFC](#ifc)
+- [Iges](#iges)
+- [IncrementalMesh](#incrementalmesh)
+- [Mirror](#mirror)
+- [Offset](#offset)
+- [OBoundingBox](#oboundingbox)
+- [Parabola](#parabola)
+- [Pipe](#pipe)
+- [PipeShell](#pipeshell)
+- [Prism](#prism)
+- [ProjectCurve](#projectcurve)
+- [ProjectSurf](#projectsurf)
+- [PyScript](#pyscript)
+- [Remove](#remove)
+- [ResultFilter](#resultfilter)
+- [Revol](#revol)
+- [RingArray](#ringarray)
+- [Rotate](#rotate)
+- [Scale](#scale)
+- [Script](#script)
+- [Section](#section)
+- [Shell](#shell)
+- [Solid](#solid)
+- [Sphere](#sphere)
+- [SpherialCrown](#spherialcrown)
+- [Split](#split)
+- [SplitByPlane](#splitbyplane)
+- [SplitEdge](#splitedge)
+- [Step](#step)
+- [Stl](#stl)
+- [STLWriter](#stlwriter)
+- [SVGWriter](#svgwriter)
+- [Tetrahedron](#tetrahedron)
+- [ThickSolid](#thicksolid)
+- [Thrusections](#thrusections)
+- [ThrusectionsPath](#thrusectionspath)
+- [Torus](#torus)
+- [Transform](#transform)
+- [TransformRT](#transformrt)
+- [TransformRTAS](#transformrtas)
+- [Translation](#translation)
+- [Vector](#vector)
+- [Vertex](#vertex)
+- [Wedge](#wedge)
+- [Wire](#wire)
 
 **************************************************************
-[返回目录](#Outline)
-### add
+[返回目录](#outline)
+### Add
 - 类型: `Operator`
 
 
@@ -111,7 +111,7 @@ Add函数通过一个静态的检查列表，来检查添加的Shape是不是合
 使用这个函数需要注意的是这个Add只是简单的将Shape添加到TShape的Shape表中，并没有维护BREP的边界信息。
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### AppLaunch
 - 类型: `Operator`
 
@@ -142,7 +142,7 @@ parameters = {
 在子进程中执行命令行，主要用于启动一个第三方应用程序
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Arc
 - 类型: `Creator`
 
@@ -207,7 +207,7 @@ arc_mode的说明如下:
 当 sense = False：圆弧沿顺时针方向（CW）生成。
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Array
 - 类型: `Operator`
 
@@ -244,7 +244,7 @@ coordinates中包含的其余点数决定了阵列的模式
 3个点：从基点到点1和点2及点3进行空间矩形阵列，间距由step1和step2,和step3决定
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### BoundingBox
 - 类型: `Operator`
 
@@ -274,7 +274,7 @@ a flag that tells whether or not the shape has first to be meshed before the bbo
 computation. This produces more accurate results
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Box
 - 类型: `Creator`
 
@@ -315,7 +315,7 @@ vx_dir = gp_Dir(vec_0_2)
 ax2 = gp_Ax2(point_list[0], n_dir,vx_dir)
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Brep
 - 类型: `Loader`
 
@@ -337,7 +337,7 @@ parameters = {}
 读取brep格式文件
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### BSPLine
 - 类型: `Creator`
 
@@ -360,7 +360,7 @@ parameters = {}
 输入多个点坐标对象，构建B样条曲线
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### BSPLineSurf
 - 类型: `Operator`
 
@@ -382,7 +382,7 @@ parameters = {}
 输入多个样条曲线，创建样条曲面
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Chamfer
 - 类型: `Operator`
 
@@ -415,7 +415,7 @@ only_dis1为False的模式下：
 即一个面后面跟着一个边，倒角的时候，给定的面用来标记，d1的那一侧。
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### CircleCenter
 - 类型: `Operator`
 
@@ -437,7 +437,7 @@ parameters = {}
 求出给定圆的圆心
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Circle
 - 类型: `Creator`
 
@@ -468,7 +468,7 @@ parameters = {
 3个点：圆心在第1个点，圆所在法向量为第1个点到第2个点的连线方向，心坐标系x轴为第1个点指向第三个点的方向
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### CirclePolygon
 - 类型: `Creator`
 
@@ -500,7 +500,7 @@ parameters = {
 3个点：圆心在第1个点，圆所在法向量为第1个点到第2个点的连线方向，心坐标系x轴为第1个点指向第三个点的方向
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Common
 - 类型: `Operator`
 
@@ -522,7 +522,7 @@ parameters = {}
 求两个图元的交集
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Compound
 - 类型: `Operator`
 
@@ -544,7 +544,7 @@ parameters = {}
 将多个OCC图元进行组合，形成OCC的组合图元
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Cone
 - 类型: `Creator`
 
@@ -577,7 +577,7 @@ parameters = {
 如果参考点包含3个点，则根据三个点所创建的坐标系统来创建
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Copy
 - 类型: `Operator`
 
@@ -603,7 +603,7 @@ parameters = {
 参考图元为若干点，其中的第一个点是基点，其余为目标点
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Cut
 - 类型: `Operator`
 
@@ -626,7 +626,7 @@ parameters = {}
 第1个图元减去第2个图元,得到的结果再减去第3个图元,以此类推
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Cylinder
 - 类型: `Creator`
 
@@ -668,7 +668,7 @@ vx_dir = gp_Dir(vec_0_2)
 ax2 = gp_Ax2(point_list[0], n_dir, vx_dir)
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Decompose
 - 类型: `Operator`
 
@@ -701,7 +701,7 @@ return_index_list如果给定如下内容[0,2,5]
 表示将给定的所有图元按照顺序进行分解,返回第0,2,5个子图元
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### DomainObjFile
 - 类型: `Loader`
 
@@ -728,7 +728,7 @@ parameters = {
 加载器的选择由domain_id,domain_type,io_name这3个参数组合确定
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Dxf2d
 - 类型: `Loader`
 
@@ -752,7 +752,7 @@ parameters = {
 读取dxf文件的读取器
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Edge
 - 类型: `Creator`
 
@@ -780,7 +780,7 @@ parameters = {
 根据combin,返回一个或多个对象
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### EdgeArray
 - 类型: `Operator`
 
@@ -808,7 +808,7 @@ parameters = {
 输入图元中的第一个edge对象为阵列路径
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Ellipse
 - 类型: `Creator`
 
@@ -840,7 +840,7 @@ parameters = {
 3个点：圆心在第1个点，圆所在法向量为第1个点到第2个点的连线方向，心坐标系x轴为第1个点指向第三个点的方向
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Ellipsoid
 - 类型: `Creator`
 
@@ -866,7 +866,7 @@ parameters = {
 在坐标原点处建立一个椭球
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Evolved
 - 类型: `Operator`
 
@@ -907,7 +907,7 @@ False
 适用于某些特殊扫掠情况，如螺旋弹簧、变截面扫描等。
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Face
 - 类型: `Creator`
 
@@ -932,7 +932,7 @@ parameters = {
 输入若干Wire类型图元
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Fillet2D
 - 类型: `Operator`
 
@@ -958,7 +958,7 @@ parameters = {
 传入的两个edge对象必须共面,并且必须有交点
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Fillet
 - 类型: `Operator`
 
@@ -1001,7 +1001,7 @@ batch为False时:
 
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Fuse
 - 类型: `Operator`
 
@@ -1023,7 +1023,7 @@ parameters = {}
 布尔和操作
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### GlobalParamBatch
 - 类型: `Operator`
 
@@ -1048,7 +1048,7 @@ parameters = {
 TODO: 后续完善文档
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Group
 - 类型: `Operator`
 
@@ -1076,7 +1076,7 @@ parameters = {
 use_result_filter 为True的情况下,可以通过return_index_list进行结果筛选
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Helix
 - 类型: `Operator`
 
@@ -1108,7 +1108,7 @@ dx/dy表示螺旋的斜度
 u1到u2表示参数空间的范围，例如对于圆柱来讲u1=0,u2=6*pi则代表绕三圈的螺旋线
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Hyperbola
 - 类型: `Creator`
 
@@ -1139,7 +1139,7 @@ parameters = {
 2个点: 局部坐标系原点位于给定第1个参考点再xy平面的投影,法向量第2个点减去第1个点得到的向量在xy平面的投影
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### IFC
 - 类型: `Loader`
 
@@ -1164,7 +1164,7 @@ parameters = {
 读取一个IFC文件
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Iges
 - 类型: `Loader`
 
@@ -1186,7 +1186,7 @@ parameters = {}
 读取一个IGES文件
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### IncrementalMesh
 - 类型: `Operator`
 
@@ -1229,7 +1229,7 @@ is_relative
 布尔值，决定偏差参数是绝对还是相对于形状尺寸,如果为True，偏差参数将相对于形状的边界框尺寸计算
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Mirror
 - 类型: `Operator`
 
@@ -1258,7 +1258,7 @@ line: 取2个参考点
 face: 取3个参考点
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Offset
 - 类型: `Operator`
 
@@ -1289,7 +1289,7 @@ line: 取2个参考点
 face: 取3个参考点
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### OBoundingBox
 - 类型: `Operator`
 
@@ -1315,7 +1315,7 @@ parameters = {
 生成给定图元的方向包围盒
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Parabola
 - 类型: `Creator`
 
@@ -1345,7 +1345,7 @@ parameters = {
 2个点: 局部坐标系原点位于给定第1个参考点再xy平面的投影,法向量第2个点减去第1个点得到的向量在xy平面的投影
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Pipe
 - 类型: `Operator`
 
@@ -1400,7 +1400,7 @@ BRepOffsetAPI_MakePipe 默认要求路径（Spine）至少是 G1 连续（切线
 当 force_approx_c1 = False（默认值）时，若路径不满足 G1 连续，可能直接报错或生成畸形结果。
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### PipeShell
 - 类型: `Operator`
 
@@ -1432,7 +1432,7 @@ parameters = {
 灵活性	    较低	                    高（可控制截面过渡、旋转等）
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Polygon
 - 类型: `Creator`
 
@@ -1457,7 +1457,7 @@ parameters = {
 给定若干参考点，形成一个多边形
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Prism
 - 类型: `Operator`
 
@@ -1488,7 +1488,7 @@ parameters = {
 当传入0个点时,必须将use_height设为True,auto_normal_vector也设为True
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### ProjectCurve
 - 类型: `Operator`
 
@@ -1514,7 +1514,7 @@ parameters = {
 输入的edge必须是曲线，如果是一般的线则无效
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### ProjectSurf
 - 类型: `Operator`
 
@@ -1539,7 +1539,7 @@ parameters = {
 给定点和曲面，返回点在曲面上的投影点
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### PyScript
 - 类型: `Loader`
 
@@ -1563,7 +1563,7 @@ parameters = {
 执行render类型的py脚本,一般不使用此方法
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Remove
 - 类型: `Operator`
 
@@ -1587,7 +1587,7 @@ parameters = {}
 参考图元的第1个对象和输入图元必须是同一个图元,其余图元是需要删掉的特征
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### ResultFilter
 - 类型: `Operator`
 
@@ -1642,7 +1642,7 @@ assist_shapes_id_list = [{"index":2, "shape_type":None},{"index":7, "shape_type"
 此时exclude参数也生效
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Revol
 - 类型: `Operator`
 
@@ -1670,7 +1670,7 @@ parameters = {
 需要2个参考点定义旋转轴向量，从第1个点指向第2个点
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### RingArray
 - 类型: `Operator`
 
@@ -1708,7 +1708,7 @@ parameters = {
 3个点：圆心在第1个点，圆所在法向量为第1个点到第2个点的连线方向，新坐标系x轴为第1个点指向第三个点的方向
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Rotate
 - 类型: `Operator`
 
@@ -1738,7 +1738,7 @@ parameters = {
 如果没有参考点,那么绕原点旋转
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Scale
 - 类型: `Operator`
 
@@ -1767,7 +1767,7 @@ parameters = {
 如果use_ref_vertex_to_scaling为True,那么就还需要4个参考点,而缩放比例也可以通过四个点形成的两条线的长度比例来计算
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Script
 - 类型: `Operator`
 
@@ -1793,7 +1793,7 @@ parameters = {
 支持python脚本,进行定制化复杂操作
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Section
 - 类型: `Operator`
 
@@ -1817,7 +1817,7 @@ parameters = {}
 输出结果为两个形状的交集（通常是一个边或点的集合，表示交线或交点）。
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Shell
 - 类型: `Operator`
 
@@ -1839,7 +1839,7 @@ parameters = {}
 将多个Face拼接成Shell
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Solid
 - 类型: `Operator`
 
@@ -1865,7 +1865,7 @@ parameters = {}
 3. 1个Solid和多个Shell
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Sphere
 - 类型: `Creator`
 
@@ -1897,7 +1897,7 @@ parameters = {
 如果参考点包含3个点，则根据三个点所创建的坐标系统来创建
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### SpherialCrown
 - 类型: `Creator`
 
@@ -1928,7 +1928,7 @@ parameters = {
 如果参考点包含3个点，则根据三个点所创建的坐标系统来创建
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Split
 - 类型: `Operator`
 
@@ -1956,7 +1956,7 @@ parameters = {
 如果第一个对象是face对象，后面可以分割任意对象
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### SplitByPlane
 - 类型: `Operator`
 
@@ -1988,7 +1988,7 @@ parameters = {
 传入3个参考点,第1个点是平面内1点,第2个点到第3个点的向量定义为法向量
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### SplitEdge
 - 类型: `Operator`
 
@@ -2013,7 +2013,7 @@ parameters = {
 将线段进行分点操作
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Step
 - 类型: `Loader`
 
@@ -2038,7 +2038,7 @@ parameters = {
 读取step格式文件
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Stl
 - 类型: `Loader`
 
@@ -2062,7 +2062,7 @@ parameters = {
 读取stl格式文件
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### STLWriter
 - 类型: `Writer`
 
@@ -2087,7 +2087,7 @@ DOMAIN_TYPE_WRITER_FILES 格式对象,并且保存stl格式文件
 将图元写成stl格式文件
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### SVGWriter
 - 类型: `Writer`
 
@@ -2137,7 +2137,7 @@ svg_color (optional), "default to "black".
 line_width (optional, default to 1): an integer
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Tetrahedron
 - 类型: `Creator`
 
@@ -2161,7 +2161,7 @@ parameters = {}
 通过给定4个参考点实现
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### ThickSolid
 - 类型: `Operator`
 
@@ -2196,7 +2196,7 @@ parameters = {
 参考图元的第1个对象和输入图元必须是同一个图元,其余图元是需要移除的Face对象
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Thrusections
 - 类型: `Operator`
 
@@ -2223,7 +2223,7 @@ parameters = {
 进行ThruSections操作，输入对象为一系列的Wire或Vertex,按照顺序排列
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### ThrusectionsPath
 - 类型: `Operator`
 
@@ -2272,7 +2272,7 @@ parameters = {
                         # pre_cur字段表示我们将path_line进行分割后形成点集合，一个点的方向向量由它上一个点和自身的位置确定
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Torus
 - 类型: `Creator`
 
@@ -2311,7 +2311,7 @@ parameters = {
 然后根据r1和r2画出圆环
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Transform
 - 类型: `Operator`
 
@@ -2336,7 +2336,7 @@ parameters = {
 使用坐标变换矩阵进行变换
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### TransformRT
 - 类型: `Operator`
 
@@ -2383,7 +2383,7 @@ axis_y 向量由第1个点指向第4个点
 axis_z 向量由第1个点指向第5个点
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### TransformRTAS
 - 类型: `Operator`
 
@@ -2415,7 +2415,7 @@ axis_z 来自第1个参考点
 translation 来自第2个点指向第3个点
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Translation
 - 类型: `Operator`
 
@@ -2442,7 +2442,7 @@ parameters = {
 如果use_vector为False,那么平移向量从参考点获得，来自第1个点指向第2个点
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Vector
 - 类型: `Operator`
 
@@ -2481,7 +2481,7 @@ parameters = {
 传入的向量既可以以参考点的方式给出，也可以以输入图元的方式给出,其读取顺序是先读取参考点，再读取输入图元
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Vertex
 - 类型: `Creator`
 
@@ -2509,7 +2509,7 @@ parameters = {
 创建若干个点对象,优先使用参考点坐标，没有参考点则使用给定的x,y,z生成1个点
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Wedge
 - 类型: `Creator`
 
@@ -2546,7 +2546,7 @@ parameters = {
 如果参考点包含3个点，则根据三个点所创建的坐标系统来创建
 ```
 **************************************************************
-[返回目录](#Outline)
+[返回目录](#outline)
 ### Wire
 - 类型: `Operator`
 
